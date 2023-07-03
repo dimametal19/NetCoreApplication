@@ -1,4 +1,4 @@
-namespace ConsoleApp1.Services.Queue;
+namespace WebApplication1.Services.Queue;
 
 public interface IBackgroundTaskQueue
 {

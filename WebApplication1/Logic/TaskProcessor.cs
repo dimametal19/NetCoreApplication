@@ -1,10 +1,6 @@
-using System.Globalization;
-using System.Text;
-using ConsoleApp1.Models;
-using Microsoft.Extensions.Logging;
 using static System.String;
 
-namespace ConsoleApp1.Logic;
+namespace WebApplication1.Logic;
 
 public class TaskProcessor
 {

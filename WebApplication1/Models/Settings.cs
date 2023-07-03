@@ -1,6 +1,4 @@
-using Microsoft.Extensions.Configuration;
-
-namespace ConsoleApp1.Models;
+namespace WebApplication1.Models;
 
 public class Settings
 {

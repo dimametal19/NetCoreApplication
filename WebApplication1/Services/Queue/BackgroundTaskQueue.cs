@@ -1,6 +1,6 @@
 using System.Collections.Concurrent;
 
-namespace ConsoleApp1.Services.Queue;
+namespace WebApplication1.Services.Queue;
 
 public class BackgroundTaskQueue : IBackgroundTaskQueue
 {

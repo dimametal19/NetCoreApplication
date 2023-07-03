@@ -1,10 +1,7 @@
-using System.ComponentModel;
-using ConsoleApp1.Models;
-using ConsoleApp1.Services.Queue;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using WebApplication1.Models;
+using WebApplication1.Services.Queue;
 
-namespace ConsoleApp1.Services;
+namespace WebApplication1.Services;
 
 public class WorkerService : BackgroundService
 {
@@ -33,7 +30,7 @@ public class WorkerService : BackgroundService
             var workItem = await _backgroundTaskQueue.DequeueAsync(stoppingToken);
             try
             {
-                _logger.LogInformation("{Num}: Processing. Queue size: {Size}", num, _backgroundTaskQueue.Size);
+                _logger.LogWarning("{Num}: Processing. Queue size: {Size}", num, _backgroundTaskQueue.Size);
                 await workItem(stoppingToken);
             }
             catch (Exception e)

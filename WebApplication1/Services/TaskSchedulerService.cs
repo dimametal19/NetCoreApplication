@@ -1,12 +1,8 @@
-using ConsoleApp1.Logic;
-using ConsoleApp1.Models;
-using ConsoleApp1.Services.Queue;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using WebApplication1.Logic;
+using WebApplication1.Models;
+using WebApplication1.Services.Queue;
 
-namespace ConsoleApp1.Services;
+namespace WebApplication1.Services;
 
 public class TaskSchedulerService : IHostedService, IDisposable
 {
